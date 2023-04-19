@@ -1,6 +1,6 @@
 $( function() { // action au chargement du DOM
 
-	//définit la fonction booléenne suivante qui envoye vrai si la valeur entrée correspond 
+	//définit la fonction booléenne suivante qui envoie vrai si la valeur entrée correspond 
 	//a l'expression régulière
 	function validateEmail(email) {
 		let emailReg = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
