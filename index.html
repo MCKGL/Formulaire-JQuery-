@@ -1,0 +1,52 @@
+<!doctype HTML>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulaire</title>
+	<link href="css/form.css" rel="stylesheet" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/form.js"></script>
+
+</head>
+
+<body>
+
+	<div id="frmContact">
+
+		<div>
+			<label style="padding-top:20px;">Nom :</label>
+			<span id="uName-info" class="info"></span><br/>
+			<input type="text" name="uName" id="uName" class="inputBox">
+		</div>
+
+		<div>
+			<label>Email :</label>
+			<span id="uMail-info" class="info"></span><br/>
+			<input type="email" name="uMail" id="uMail" class="inputBox">
+		</div>
+
+		<div>
+			<label>Sujet :</label> 
+			<span id="sujet-info" class="info"></span><br/>
+			<input type="text" name="sujet" id="sujet" class="inputBox">
+		</div>
+
+		<div>
+			<label>Message :</label> 
+			<span id="content-info" class="info"></span><br/>
+			<textarea name="content" id="content" class="inputBox" cols="60" rows="6"></textarea>
+		</div>
+
+		<div>
+			<button name="submit" class="btnAction" onClick="sendContact();">Envoyer</button>
+			<div id="mail-status"></div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
